@@ -1,0 +1,73 @@
+<%= form_for(@form) do |f| %>
+  <% if @form.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@form.errors.count, "error") %> prohibited this form from being saved:</h2>
+
+      <ul>
+      <% @form.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :matricula %><br>
+    <%= f.text_field :matricula %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_01 %><br>
+    <%= f.text_field :disciplina_01 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_02 %><br>
+    <%= f.text_field :disciplina_02 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_03 %><br>
+    <%= f.text_field :disciplina_03 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_04 %><br>
+    <%= f.text_field :disciplina_04 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_05 %><br>
+    <%= f.text_field :disciplina_05 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_06 %><br>
+    <%= f.text_field :disciplina_06 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_07 %><br>
+    <%= f.text_field :disciplina_07 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_08 %><br>
+    <%= f.text_field :disciplina_08 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_09 %><br>
+    <%= f.text_field :disciplina_09 %>
+  </div>
+  <div class="field">
+    <%= f.label :disciplina_10 %><br>
+    <%= f.text_field :disciplina_10 %>
+  </div>
+  <div class="field">
+    <%= f.label :mestrado %><br>
+    <%= f.check_box :mestrado %>
+  </div>
+  <div class="field">
+    <%= f.label :doutorado %><br>
+    <%= f.check_box :doutorado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

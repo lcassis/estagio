@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Forms</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Matricula</th>
+      <th>Disciplina 01</th>
+      <th>Disciplina 02</th>
+      <th>Disciplina 03</th>
+      <th>Disciplina 04</th>
+      <th>Disciplina 05</th>
+      <th>Disciplina 06</th>
+      <th>Disciplina 07</th>
+      <th>Disciplina 08</th>
+      <th>Disciplina 09</th>
+      <th>Disciplina 10</th>
+      <th>Mestrado</th>
+      <th>Doutorado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @forms.each do |form| %>
+      <tr>
+        <td><%= form.nome %></td>
+        <td><%= form.matricula %></td>
+        <td><%= form.disciplina_01 %></td>
+        <td><%= form.disciplina_02 %></td>
+        <td><%= form.disciplina_03 %></td>
+        <td><%= form.disciplina_04 %></td>
+        <td><%= form.disciplina_05 %></td>
+        <td><%= form.disciplina_06 %></td>
+        <td><%= form.disciplina_07 %></td>
+        <td><%= form.disciplina_08 %></td>
+        <td><%= form.disciplina_09 %></td>
+        <td><%= form.disciplina_10 %></td>
+        <td><%= form.mestrado %></td>
+        <td><%= form.doutorado %></td>
+        <td><%= link_to 'Exibir', form %></td>
+        <td><%= link_to 'Editar', edit_form_path(form) %></td>
+        <td><%= link_to 'Deletar', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo', new_form_path %>

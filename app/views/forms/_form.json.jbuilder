@@ -1,0 +1,2 @@
+json.extract! form, :id, :nome, :matricula, :disciplina_01, :disciplina_02, :disciplina_03, :disciplina_04, :disciplina_05, :disciplina_06, :disciplina_07, :disciplina_08, :disciplina_09, :disciplina_10, :mestrado, :doutorado, :created_at, :updated_at
+json.url form_url(form, format: :json)
