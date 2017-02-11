@@ -33,7 +33,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+<<<<<<< HEAD
   gem 'sqlite3'
+=======
+  gem 'sqlite3', '1.3.13'
+>>>>>>> 5bedbc9923422bd442f1b97da508c8461eab299d
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end

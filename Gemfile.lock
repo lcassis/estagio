@@ -154,10 +154,14 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
-  sqlite3
+  sqlite3 (= 1.3.13)
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
 
 BUNDLED WITH
+<<<<<<< HEAD
    1.13.6
+=======
+   1.14.3
+>>>>>>> 5bedbc9923422bd442f1b97da508c8461eab299d
