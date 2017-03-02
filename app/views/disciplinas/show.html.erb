@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @disciplina.id_disciplina %>
+</p>
+
+<p>
+  <strong>Código:</strong>
+  <%= @disciplina.cod_disciplina %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @disciplina.nome_disciplina %>
+</p>
+
+<p>
+  <strong>Turma:</strong>
+  <%= @disciplina.tuma_disciplina %>
+</p>
+
+<p>
+  <strong>Dias da semana:</strong>
+  <%= @disciplina.dias_disciplina %>
+</p>
+
+<p>
+  <strong>Horário:</strong>
+  <%= @disciplina.hora_disciplina %>
+</p>
+
+<p>
+  <strong>Área:</strong>
+  <%= @disciplina.area_id %>
+</p>
+<%= link_to 'Editar', edit_disciplina_path(@disciplina) %> |
+<%= link_to 'Voltar', disciplinas_path %>

@@ -28,21 +28,21 @@
       <tr>
         <td><%= form.nome %></td>
         <td><%= form.matricula %></td>
-        <td><%= form.disciplina_01 %></td>
-        <td><%= form.disciplina_02 %></td>
-        <td><%= form.disciplina_03 %></td>
-        <td><%= form.disciplina_04 %></td>
-        <td><%= form.disciplina_05 %></td>
-        <td><%= form.disciplina_06 %></td>
-        <td><%= form.disciplina_07 %></td>
-        <td><%= form.disciplina_08 %></td>
-        <td><%= form.disciplina_09 %></td>
-        <td><%= form.disciplina_10 %></td>
+        <td><%= form.disciplina_01 = form.disciplina_id %></td>
+        <td><%= form.disciplina_02  = form.disciplina_id %></td>
+        <td><%= form.disciplina_03 = form.disciplina_id %></td>
+        <td><%= form.disciplina_04 = form.disciplina_id %></td>
+        <td><%= form.disciplina_05 = form.disciplina_id %></td>
+        <td><%= form.disciplina_06 = form.disciplina_id %></td>
+        <td><%= form.disciplina_07 = form.disciplina_id %></td>
+        <td><%= form.disciplina_08 = form.disciplina_id %></td>
+        <td><%= form.disciplina_09 = form.disciplina_id %></td>
+        <td><%= form.disciplina_10 = form.disciplina_id %></td>
         <td><%= form.mestrado %></td>
         <td><%= form.doutorado %></td>
         <td><%= link_to 'Exibir', form %></td>
         <td><%= link_to 'Editar', edit_form_path(form) %></td>
-        <td><%= link_to 'Deletar', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Deletar', form, method: :delete, data: { confirm: 'Você tem certeza que deseja deletar essa disciplina?' } %></td>
       </tr>
     <% end %>
   </tbody>
