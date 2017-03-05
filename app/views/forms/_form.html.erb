@@ -59,6 +59,7 @@
     <p><b>Selecione a disciplina de prioridade 10:</b></p>
     <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 10:"}) %>
   </div>
+  
   <div class="field">
     <%= f.label :mestrado %><br>
     <%= f.check_box :mestrado %>

@@ -70,6 +70,6 @@ class DisciplinasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def disciplina_params
-      params.require(:disciplina).permit(:id_disciplina, :cod_disciplina, :nome_disciplina, :tuma_disciplina, :dias_disciplina, :hora_disciplina)
+      params.require(:disciplina).permit(:id_disciplina, :cod_disciplina, :nome_disciplina, :tuma_disciplina, :dias_disciplina, :hora_disciplina, :area_id)
     end
 end
