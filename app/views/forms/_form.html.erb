@@ -20,45 +20,46 @@
     <%= f.text_field :matricula %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_01 %><br>
-    <%= f.text_field :disciplina_01 %>
+    <p><b>Selecione a disciplina de prioridade 1:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 1:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_02 %><br>
-    <%= f.text_field :disciplina_02 %>
+    <p><b>Selecione a disciplina de prioridade 2:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 2:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_03 %><br>
-    <%= f.text_field :disciplina_03 %>
+    <p><b>Selecione a disciplina de prioridade 3:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 3:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_04 %><br>
-    <%= f.text_field :disciplina_04 %>
+    <p><b>Selecione a disciplina de prioridade 4:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 4:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_05 %><br>
-    <%= f.text_field :disciplina_05 %>
+    <p><b>Selecione a disciplina de prioridade 5:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 5:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_06 %><br>
-    <%= f.text_field :disciplina_06 %>
+    <p><b>Selecione a disciplina de prioridade 6:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 6:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_07 %><br>
-    <%= f.text_field :disciplina_07 %>
+    <p><b>Selecione a disciplina de prioridade 7:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 7:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_08 %><br>
-    <%= f.text_field :disciplina_08 %>
+    <p><b>Selecione a disciplina de prioridade 8:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 8:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_09 %><br>
-    <%= f.text_field :disciplina_09 %>
+    <p><b>Selecione a disciplina de prioridade 9:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 9:"}) %>
   </div>
   <div class="field">
-    <%= f.label :disciplina_10 %><br>
-    <%= f.text_field :disciplina_10 %>
+    <p><b>Selecione a disciplina de prioridade 10:</b></p>
+    <%= collection_select(:disciplina_id,0, Disciplina.all, :id_disciplina, :nome_disciplina, {:prompt => "Selecione a disciplina de prioridade 10:"}) %>
   </div>
+  
   <div class="field">
     <%= f.label :mestrado %><br>
     <%= f.check_box :mestrado %>

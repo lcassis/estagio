@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Disciplinas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id da disciplina</th>
+      <th>Código da disciplina</th>
+      <th>Nome da disciplina</th>
+      <th>Turma da disciplina</th>
+      <th>Dias da disciplina</th>
+      <th>Horário da disciplina</th>
+      <th>Área da disciplina</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @disciplinas.each do |disciplina| %>
+      <tr>
+        <td><%= disciplina.id_disciplina %></td>
+        <td><%= disciplina.cod_disciplina %></td>
+        <td><%= disciplina.nome_disciplina %></td>
+        <td><%= disciplina.tuma_disciplina %></td>
+        <td><%= disciplina.dias_disciplina %></td>
+        <td><%= disciplina.hora_disciplina %></td>
+        <td><%= disciplina.area_id %></td>
+        <td><%= link_to 'Show', disciplina %></td>
+        <td><%= link_to 'Edit', edit_disciplina_path(disciplina) %></td>
+        <td><%= link_to 'Destroy', disciplina, method: :delete, data: { confirm: 'Você tem certeza que deseja deletar essa disciplina?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Disciplina', new_disciplina_path %>

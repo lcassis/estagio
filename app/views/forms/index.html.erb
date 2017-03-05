@@ -5,21 +5,21 @@
 <table>
   <thead>
     <tr>
-      <th>Nome</th>
-      <th>Matricula</th>
-      <th>Disciplina 01</th>
-      <th>Disciplina 02</th>
-      <th>Disciplina 03</th>
-      <th>Disciplina 04</th>
-      <th>Disciplina 05</th>
-      <th>Disciplina 06</th>
-      <th>Disciplina 07</th>
-      <th>Disciplina 08</th>
-      <th>Disciplina 09</th>
-      <th>Disciplina 10</th>
-      <th>Mestrado</th>
-      <th>Doutorado</th>
-      <th colspan="3"></th>
+      <tr><td>Nome</td> 
+      <td>Matricula</td>
+      <td>Disciplina 01</td>
+      <td>Disciplina 02</td>
+      <td>Disciplina 03</td>
+      <td>Disciplina 04</td>
+      <td>Disciplina 05</td>
+      <td>Disciplina 06</td>
+      <td>Disciplina 07</td>
+      <td>Disciplina 08</td>
+      <td>Disciplina 09</td>
+      <td>Disciplina 10</td>
+      <td>Mestrado</td>
+      <td>Doutorado</td>
+      <td colspan="3"></td>
     </tr>
   </thead>
 
@@ -28,21 +28,21 @@
       <tr>
         <td><%= form.nome %></td>
         <td><%= form.matricula %></td>
-        <td><%= form.disciplina_01 %></td>
-        <td><%= form.disciplina_02 %></td>
-        <td><%= form.disciplina_03 %></td>
-        <td><%= form.disciplina_04 %></td>
-        <td><%= form.disciplina_05 %></td>
-        <td><%= form.disciplina_06 %></td>
-        <td><%= form.disciplina_07 %></td>
-        <td><%= form.disciplina_08 %></td>
-        <td><%= form.disciplina_09 %></td>
-        <td><%= form.disciplina_10 %></td>
+        <td><%= form.disciplina_01 = form.disciplina_id %></td>
+        <td><%= form.disciplina_02  = form.disciplina_id %></td>
+        <td><%= form.disciplina_03 = form.disciplina_id %></td>
+        <td><%= form.disciplina_04 = form.disciplina_id %></td>
+        <td><%= form.disciplina_05 = form.disciplina_id %></td>
+        <td><%= form.disciplina_06 = form.disciplina_id %></td>
+        <td><%= form.disciplina_07 = form.disciplina_id %></td>
+        <td><%= form.disciplina_08 = form.disciplina_id %></td>
+        <td><%= form.disciplina_09 = form.disciplina_id %></td>
+        <td><%= form.disciplina_10 = form.disciplina_id %></td>
         <td><%= form.mestrado %></td>
         <td><%= form.doutorado %></td>
         <td><%= link_to 'Exibir', form %></td>
         <td><%= link_to 'Editar', edit_form_path(form) %></td>
-        <td><%= link_to 'Deletar', form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Deletar', form, method: :delete, data: { confirm: 'Você tem certeza que deseja deletar essa disciplina?' } %></td>
       </tr>
     <% end %>
   </tbody>
