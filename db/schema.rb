@@ -27,10 +27,9 @@ ActiveRecord::Schema.define(version: 20170302215952) do
     t.integer  "tuma_disciplina"
     t.string   "dias_disciplina"
     t.time     "hora_disciplina"
-    t.integer  "area_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
-    
+    t.integer  "area_id"
   end
 
   create_table "forms", force: :cascade do |t|
